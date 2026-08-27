@@ -1,21 +1,52 @@
-# Git and GitHub Final Project
+# Simple Interest Calculator
 
 ## Project Name
-**Git & GitHub Essentials – Practice Repository**
+**Simple Interest Calculator**
 
 ## Description
-This repository was created as part of the final project for the *Introduction to Git and GitHub* course. It demonstrates core Git and GitHub skills including repository setup, branching, merging, forking, pull requests, and open-source project documentation.
+This project is a Bash shell script that calculates simple interest based on user input. It was created as part of the final project for the *Introduction to Git and GitHub* course to demonstrate Git/GitHub workflow skills alongside a small, functional command-line tool.
 
-## What This Repository Contains
-- Standard open-source documentation files (`LICENSE`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`)
-- A sample Bash script (`simple-interest.sh`) that calculates simple interest based on user input
-- Evidence of Git CLI operations such as forking, branching, merging, and pull requests
+## How It Works
+The script (`simple-interest.sh`) prompts the user for three values:
+- **Principal amount** — the initial sum of money
+- **Rate of interest** — the annual interest rate (as a percentage)
+- **Time period** — the duration in years
 
-## Skills Demonstrated
-- Creating and managing a GitHub repository
-- Writing project documentation (README, LICENSE, CODE_OF_CONDUCT, CONTRIBUTING)
-- Using Git commands: `clone`, `checkout`, `branch`, `merge`, `commit`, `push`
-- Forking repositories and submitting pull requests via the GitHub CLI/API
+It then calculates the simple interest using the standard formula:
+
+```
+Simple Interest = (Principal * Rate * Time) / 100
+```
+
+and prints the result to the terminal.
+
+## Usage
+```bash
+chmod +x simple-interest.sh
+./simple-interest.sh
+```
+
+You will be prompted to enter the principal, rate of interest, and time period, and the script will output the calculated simple interest.
+
+## Example
+```
+----- Simple Interest Calculator -----
+Enter principal amount: 1000
+Enter rate of interest (in %): 5
+Enter time period (in years): 2
+---------------------------------------
+Principal Amount : 1000
+Rate of Interest : 5%
+Time Period      : 2 year(s)
+Simple Interest   : 100.00
+---------------------------------------
+```
+
+## Repository Contents
+- `simple-interest.sh` — the simple interest calculator script
+- `LICENSE` — Apache License 2.0
+- `CODE_OF_CONDUCT.md` — community code of conduct
+- `CONTRIBUTING.md` — contribution guidelines
 
 ## Author
 Muhammad Hammad Ali
